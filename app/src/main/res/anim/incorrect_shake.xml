@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/decelerate_interpolator">
+
+    <translate android:fromXDelta="0" android:toXDelta="-5%p"
+        android:duration="100"/>
+<!--    starts 100ms after the first animation. moves from LTR-->
+    <translate android:fromXDelta="-5%p" android:toXDelta="5%p"
+        android:duration="100" android:startOffset="100"/>
+    <!--    starts 200ms after the first animation, move from RTL-->
+    <translate android:fromXDelta="5%p" android:toXDelta="-5%p"
+        android:duration="100" android:startOffset="200"/>
+</set>
